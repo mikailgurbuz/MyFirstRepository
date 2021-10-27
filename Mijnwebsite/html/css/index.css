@@ -1,0 +1,449 @@
+@charset "utf)-8";
+
+
+}
+
+
+body {
+    text-align: center;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+#container {
+    text-align: left;
+    min-height: 100%;
+    position: relative;
+}
+
+#header,
+#footer {
+    background-color: black;
+
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: inline-block;
+
+}
+
+#nav li {
+    float: left;
+    padding: 53px 0;
+
+}
+
+#nav li.center {
+    padding: 0px;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-family: 'Alice', serif;
+    font-size: 24px;
+
+
+
+}
+
+#nav li a:hover {
+    color: #b8691c;
+}
+
+#nav li a.current {
+    color: #b8691c;
+}
+
+/* voor current pagina, verander kleur in nav item */
+#carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#carousel img {
+    display: block;
+    width: 100%;
+    margin: -20.25% 0;
+    /* image cropping,  voor mobile 12% */
+
+}
+
+#portfolio {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#portfolio a {
+    font-size: 150%;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    border-left: solid black;
+    background-color: black;
+    border-radius: 5px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+#portfolio a:hover {
+    color: #b8691c;
+
+
+
+}
+
+#blog-container-index {
+    margin: 20px;
+    text-align: center;
+}
+
+#blog {
+
+    text-align: left;
+    display: block;
+    width: 40%;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+
+#blog-img {
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#blog-img img {
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -20%;
+}
+
+#blog h1 {
+    font-size: 26px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bold;
+
+}
+
+#blog p {
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+}
+
+#date {
+    font-weight: bold;
+}
+
+#blog-more {
+    margin-right: 100px;
+    text-align: right;
+}
+
+#blog a:hover {
+    color: #b8691c;
+}
+
+#contact {
+    text-align: center;
+    display: block;
+    width: 100%
+}
+
+#contact a {
+    font-size: 150%;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    text-align: center;
+    border-width: 100px;
+    border-left: solid;
+    background-color: black;
+    border-radius: 5px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+
+}
+
+#contact a:hover {
+    color: #b8691c;
+}
+
+.footer {
+    margin-top: 20px;
+    height: 170px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    padding: 53px 0;
+
+}
+
+.footer img {
+    position: relative;
+    bottom: 45px;
+}
+
+/* home pagina hierboven inclusief header & footer, hieronder komt mijn portfolio*/
+#portfoliopage {
+    text-align: center;
+    display: block;
+    width: 100%
+}
+
+#portfoliopage h1 {
+    color: #b8691c;
+    font-family: 'Alice', serif;
+    font-size: 24px;
+
+
+}
+
+#portfoliopage img {
+
+    height: 800px;
+}
+
+#portfoliopage p {
+    font-size: 150%;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #b8691c;
+
+}
+
+#portfolio-image {
+    display: inline-block;
+    width: 30%;
+    overflow: hidden;
+    margin: 30px 10px;
+    height: 300px;
+    position: relative;
+
+}
+
+
+
+#portfolio-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+}
+
+#portfolio-image img.enlarge-icon {
+    width: 32px;
+    height: 32px;
+    z-index: 5;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    display: none;
+
+
+}
+
+#portfolio-image-caption {
+    background-color: black;
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
+}
+
+#portfolio-image-caption p {
+    color: white;
+}
+
+#portfolio-image-full:hover #portfolio-image-caption p {
+    color: #b8691c;
+
+}
+
+#portfolio-image-full:hover #portfolio-image img.enlarge-icon {
+    display: inline;
+
+}
+
+/* Portfolio hierboven, Blog pagina hier beneden*/
+#blog-container {}
+
+#blog-container-item {
+    margin: 20px 40px;
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    text-align: center;
+}
+
+#blog-container-item-img,
+#blog-container-item-text {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 0 auto;
+    text-align: left;
+    height: 100%;
+}
+
+#blog-container-item-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+#blog-container h1 {
+    color: #b8691c;
+    font-family: 'Alice', serif;
+    font-size: 24px;
+
+
+}
+
+#blog3 {
+
+    text-align: center;
+    display: block;
+    width: 100%
+}
+
+#blog3 img {
+    width: 30%
+}
+
+#blog3 h1 {
+    font-size: 26px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bold;
+
+}
+
+#blog3 p {
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+}
+
+/* Hieronder komt de about page*/
+#aboutme {
+    text-align: center;
+    margin: 20px;
+}
+
+#aboutme-text,
+#aboutme-img {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+    margin: 0px 20px;
+    vertical-align: top;
+}
+
+#aboutme-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#aboutme p {
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+}
+
+#aboutme ul {
+    background-color: white;
+
+}
+
+#aboutme ul li {
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+    display: inline-block;
+}
+
+#aboutme a {
+    text-decoration: none;
+}
+
+#aboutme a:visited {
+    color: darkgoldenrod;
+}
+
+/* hier komt de contact page*/
+
+#contact-container {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 170px;
+}
+
+#contactpage {
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+#contactpage p {
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+}
+
+#contactpage ul {
+    background-color: white
+}
+
+#contactpage ul li {
+    display: inline;
+
+}
+
+#contactpage ul li a {
+    color: black;
+    font-size: 26px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: bold;
+}
+
+#form {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
